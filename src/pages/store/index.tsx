@@ -2,7 +2,6 @@ import { NextPage } from "next";
 import React, { FormEvent, useState } from "react";
 import { trpc } from "@/utils/trpc";
 import { useSession } from "next-auth/react";
-import { Store } from "@prisma/client";
 
 const Stores: NextPage = () => {
   const { data: sessionData } = useSession();
